@@ -4,13 +4,13 @@ A simple CLI text editor in C, leveraging [PDCurses](https://github.com/wmcbrine
 
 ## Features
 
-- **Insert/Delete Text:** Supports inserting characters, backspacing, and creating new lines.
-- **File Operations:** Load an existing file or save your current text to a file.
-- **Status Bar:** Displays cursor position, total lines, and shortcut reminders.
-- **Keyboard Shortcuts:**
-    - **Ctrl+S**: Save the current file.
-    - **Ctrl+Q**: Quit the editor.
-- **Scrolling:** Keeps the cursor visible by adjusting the top line when you navigate beyond the visible screen area.
+- Insert/Delete Text: Supports inserting characters, backspacing, and creating new lines.
+- File Operations: Load an existing file or save your current text to a file.
+- Status Bar: Displays cursor position, total lines, and shortcut reminders.
+- Keyboard Shortcuts:
+    - Ctrl+S: Save the current file.
+    - *Ctrl+Q: Quit the editor.
+- Scrolling: Keeps the cursor visible by adjusting the top line when you navigate beyond the visible screen area.
 
 ## Requirements
 
@@ -20,12 +20,12 @@ A simple CLI text editor in C, leveraging [PDCurses](https://github.com/wmcbrine
 
 ## Building
 
-1. **Clone the Repository**
+1. Clone the Repository
    ```bash
    git clone https://github.com/haesol1013/tedit.git
    cd tedit
    ```
-2. **Configure and Build with CMake**
+2. Configure and Build with CMake
    ```bash
    mkdir build
    cd build
@@ -34,7 +34,7 @@ A simple CLI text editor in C, leveraging [PDCurses](https://github.com/wmcbrine
    ```
    - The resulting binary will be placed in the `bin` directory under the project root.
 
-3. **Verify the Executable**
+3. Verify the Executable
     - Navigate to the `bin` folder and confirm that an executable named `tedit` (or `tedit.exe` on Windows) was created.
 
 ## Usage
@@ -43,27 +43,8 @@ A simple CLI text editor in C, leveraging [PDCurses](https://github.com/wmcbrine
 ./tedit [filename]
 ```
 
-- **Optional [filename]:** If provided, Tedit attempts to load the specified file at startup.
-- **Edit text:** Use regular characters, arrow keys, and the following shortcuts.
-    - **Ctrl+S** to save changes.
-    - **Ctrl+Q** to quit the application.
-- **Saved file:** If no filename is given, the editor will save your work to `unnamed.txt`.
-
-## Directory Structure
-
-```
-tedit/
-├── CMakeLists.txt
-├── include/
-│   ├── editor.h
-│   └── file_io.h
-├── external/
-│   └── pdcurses/
-│       ├── curses.h
-│       └── pdcurses.a
-├── src/
-│   ├── main.c
-│   ├── editor.c
-│   └── file_io.c
-└── bin/
-```
+- Optional [filename]: If provided, Tedit attempts to load the specified file at startup.
+- Edit text: Use regular characters, arrow keys, and the following shortcuts.
+    - Ctrl+S to save changes.
+    - Ctrl+Q to quit the application.
+- Saved file: If no filename is given, the editor will save your work to `unnamed.txt`.
